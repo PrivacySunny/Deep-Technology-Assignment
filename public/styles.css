@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.featured-voices {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.featured-voices h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 37px;
+  padding: 21px;
+}
+
+.voice-item {
+  color: rgb(25, 21, 21);
+}
+
+.voice-item h3 {
+  color: rgb(218, 16, 16);
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.voice-item p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.latest-stories {
+  flex: 1;
+  background-color: yellow;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.latest-stories h2 {
+  font-size: 44px;
+  margin-bottom: 31px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.latest-stories ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.latest-stories li {
+  margin-bottom: 10px;
+}
+
+.latest-stories li a {
+  font-size: 24px;
+  color: black;
+  display: block;
+}
+.latest-stories li a:hover {
+  color: red;
+}
+
+.latest-stories li small {
+  display: block;
+  font-size: 15px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .latest-stories {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
